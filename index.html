@@ -91,10 +91,44 @@
 <style>
 * {
   box-sizing: border-box;
+}
+.top-one{
+  display: block;
+  height: 10%;
 }  
 body {
   background-color:#00F4B1; 
   margin: 0;
+}
+.group-tag{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.date-tag{
+  font-size:36px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.5;
+  width: fit-content;
+  background-color:#FFFCC5;
+  border-radius: 28px;
+  margin-left: 17%;
+  margin-top: 5% ;
+  padding: 10px 20px 10px 20px;
+  position: absolute; top: 5%; z-index:11;
+}
+.ux-tag{
+  font-size: 36px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  line-height: 1.5;
+  width: fit-content;
+  background-color:#FFFCC5;
+  border-radius: 28px;
+  margin-left: 17%;
+  margin-top: 5% ;
+  padding: 10px 20px 10px 20px;
+  position: absolute; top: 5%; left:60%; z-index:11;
 }
 
 img{
@@ -104,53 +138,6 @@ img{
   padding-right: 5%;
 }
   
-  .date-button {
-    background-color: #f64040;
-    color: white;
-    border: none;
-    height: 36px;
-    width: 105px;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    margin-right: 8px;
-    font-weight: bold;
-  }
-  .date-button:hover{
-    background-color: rgb(255, 0, 0);
-  }
-  .ux-button {
-    background-color: white;
-    border-color: rgb(0, 137, 222);
-    color: rgb(0, 137, 222);
-    height: 36px;
-    width: 80px;
-    border-radius: 4px;
-    border-width: 1.8px;
-    border-style: solid;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.7s,color 1s; 
-  }
-  .ux-button:hover{
-    background-color:rgb(0, 137, 222);
-    color: rgb(255, 255, 255);
-  }
-  .tweet-button{
-    background-color: rgb(25, 156, 255);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 70px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 8px;
-    transition: box-shadow 0.7s;
-  }
-  .tweet-button:hover{
-    box-shadow: 2px 2px 9px rgba(0, 20, 120, 0.3);
-  }
   
   .video-title{
     font-family: Arial;
@@ -165,23 +152,23 @@ img{
 
 
 
-
+<header class="top-one">
+</header>
 <body>
-  <button class="date-button">
-    2024
-  </button>
-  <button class="ux-button">
-    Ux designer
-  </button>
-  <button class="tweet-button">
-    Tweet
-  </button>
-  
-  <p class="video-title">
-    talking tech and ai with google ceo sundar pichai
-  </p>
+ 
 
-<img src="first-image/first-image1.png" width="1230" height="658">
+  <div class="group-tag">
+   <div class="date-tag">
+    2024
+   </div>
+   <div class="ux-tag">
+    ux designer
+   </div>
+   <img src="first-image/first-image1.png" width="1230" height="658">
+
+  </div>
+
+
 </div>
 </body>
 </html>
