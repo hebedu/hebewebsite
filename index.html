@@ -236,36 +236,33 @@ body {
 .line-title img{
   width:38%;
   height:auto;
-  margin-left: 32%;
+  position: absolute; left: 30%; z-index: 14;
 } 
 
+
 .uk-2023 img{
-  width:9%;
   height:auto;
-  margin-top:5%;
-  margin-left: 30%;
+  position: absolute; z-index: 14; left:29%;
+  margin-top: 25%;
+  width: 10%;
 }
 
-.london-img {
-  width: 100%;
-  position:absolute; z-index: 14; 
-  margin-left: 10%;
-  margin-top: 40px;
+.london-img{
+  width: 30%;
+  height: auto;
+  margin-top: 30%;
+  position: absolute; left: 8%;
+  
 }
 
-.line-long{
-  width:0.7%;
-  height:auto;
-  margin-left: 37%;
-  position:absolute; z-index: 13;
+
+
+#title-regular1{
+  margin-left: 40%;
+  margin-top: 24%;
 }
 
-#title-regular{
-  margin-left: 41%;
-  margin-top: -5%;
-}
-
-#title-regular li{
+#title-regular1 li{
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
@@ -309,13 +306,98 @@ body {
 }
 
 
+
+
+
+/* first 3 */
+
+.shanghai-number img{
+  width:18%;
+  height:auto;
+  margin-top:10%;
+  position: absolute; left: 21%; z-index: 14;
+}
+
+.year-date{
+  width: 100%;
+  height: auto;
+  margin-left: 20%;
+  margin-top: 18%;
+}
+
+
+#year-stick{
+  font-family:"Inter", sans-serif;
+  color:#FFFFFF;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5vw;
+}
+
+#year-change{
+  font-family:"Inter", sans-serif;
+  color:#FF4882;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5vw;
+  width: fit-content;
+  background-color:#FFFFFF;
+  border-radius: 10px;
+  margin-left: 4px;
+  padding: 1% 1% 1% 1%;
+
+}
+
+#title-regular2{
+  margin-left: 40%;
+  margin-top: -13%;
+}
+
+#title-regular2 li{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+.inline{
+  width: 100%;
+}
+#subtitle-remote{
+  padding: 1% 1% 1% 1%;
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:100;
+  font-style: normal;
+  font-size: 1.4vw;
+  border-color:#1D1D5D;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  width: fit-content;
+  float:initial;
+}
+.shanghai-img{
+  width: 30%;
+  height: auto;
+  margin-top: -10%;
+  position: absolute; left: 7%; z-index: 14;
+}
+
+
+
+/* whole page */
+.line-long{
+  width:0.7%;
+  height: auto;
+  position:absolute; left:37%;z-index: -10;
+}
+
 @font-face{
   font-family: "Inter-Black";
   src:url(../font/Inter-var-2.ttf);
   font-weight:normal;
   font-style: normal;
 }
-
 
 </style>
 </head>
@@ -326,12 +408,13 @@ body {
 </header>
 <body>
  
-  <div class="row">
+ 
     
-  <div class="group-tag">
+
    <div class="date-tag">
     2024
    </div>
+
    <div class="ux-tag">
     ux designer
    </div>
@@ -356,39 +439,75 @@ body {
   </div>
 
 
- <div class="row">
+
+
   <div class="line-title" id="top2">
       <img src="first-image/line_and_title_1.png" width="553px"; height="297px";>
   </div>
+
 
   <div class="uk-2023" >
   <img src="first-image/UK_img.png" width="126px";height="48px";>
   </div>
 
-  
   <div class="london-img">
-    <img src="first-image/london_img.png" width="421px"; height="364px";>
+    <img src="first-image/london_img.png" width="100%";>
     </div>
 
-  <div class="line-long">
-    <img src="first-image/line_long.png" width="9px"; height="1888px";>
-    </div>
 
- </div>
+ 
+
+ 
  
   
 
 
-    <ul id="title-regular">
+
+    <ul id="title-regular1">
       <li id="subtitle"> MA Degree Design Management </li>
       <li id="subtitle-text"> University of southampton </li>
       <li id="subtitle-year"> 2023-2024 </li>
       <li id="box-text">The course modules of the MA include marketing management, design process management, and leadership. Its simulated marketing entrepreneurship course allows you to comprehensively understand market feedback and formulate strategies from the perspective of an entrepreneur, as well as understand the business and expand the user base. At the same time, its design management covers design methods and process management. </li>
     </ul>
 
-
+    
  
   
+    <div class="shanghai-number">
+      <img src="first-image/Shanghai_number.png" width="260"; height="46";>
+  </div>
+ 
+  <div class="year-date">
+    <a id="year-stick">20</a>
+    <a id="year-change">22</a>
+  </div>
+
+  <ul id="title-regular2">
+    <span class="inline">
+    <a id="subtitle"> Prismpop </a>
+    <a id="subtitle-remote"> Remote </a>
+    </span>
+    <li id="subtitle-text"> UI&UX designer </li>
+    <li id="subtitle-year"> 2022-2023 </li>
+  </ul>
+
+  <div class="shanghai-img">
+    <img src="first-image/shanghaiicon.png" width="100%";>
+    </div>
+
+   
+
+
+
+
+
+
+  <div class="line-long">
+    <img src="first-image/line_long.png" width="100%";>
+    </div>
+  
+
+
   <script>
     function onTopClick(){
       window.location.hash="#top2";
