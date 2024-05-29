@@ -92,6 +92,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
 <style>
 
   
@@ -120,7 +121,12 @@ p{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* For width 400px and larger: */
+
+
+
+
+
+
 /* first 1 */
 
 
@@ -138,7 +144,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10%;
+  height:86px ;
 }
+
 .date-tag{
   font-size:3vw;
   font-family:"Inter", sans-serif;
@@ -229,38 +237,96 @@ body {
   padding-right: 5%;
 }
 
+.arrows-float{
+  width: 2%;
+  height: auto;
+  position: absolute; left: 25%;
+  margin-top: -10%;
 
+}
+.arrows-float img{
+  animation: float 6.5s infinite;
+}
+
+@keyframes float{
+  0%{transform: translateY(0);}
+  10%{transform: translateY(8px);}
+  20%{transform: translateY(13px);}
+  30%{transform: translateY(0);}
+  40%{transform: translateY(8px);}
+  50%{transform: translateY(13px);}
+  60%{transform: translateY(0);}
+  70%{transform: translateY(8px);}
+  80%{transform: translateY(13px);}
+  90%{transform: translateY(18px);}
+  100%{transform: translateY(0px);}
+}
 
   /* first 2 */
-  
+
+
+.line-title{
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1s ease;
+  margin-top: 5%;
+}
+
+.line-title.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.line-title.move-up {
+  transform: translateY(-80px); /* 向上移动10px */
+}
+
+
 .line-title img{
   width:38%;
   height:auto;
+  margin-top: 1%;
   position: absolute; left: 30%; z-index: 14;
 } 
 
+.uk-2023-group{
+  margin-top:34%;
+  opacity: 0;
+  transition: transform 1.5s ease, opacity 1s ease;
+
+}
+
+
+.uk-2023-group.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.uk-2023-group.move-up {
+  transform: translateY(-80px); /* 向上移动10px */
+}
+
 
 .uk-2023 img{
+  width:10%;
   height:auto;
-  position: absolute; z-index: 14; left:29%;
-  margin-top: 25%;
-  width: 10%;
+  position: absolute;
+  margin-left: 29%;
 }
 
 .london-img{
   width: 30%;
   height: auto;
-  margin-top: 30%;
+  margin-top: 5%;
   position: absolute; left: 8%;
   
 }
 
 
-
-#title-regular1{
+.title-regular1{
   margin-left: 40%;
-  margin-top: 24%;
+  
 }
+
+
+
 
 #title-regular1 li{
   display: flex; 
@@ -311,20 +377,39 @@ body {
 
 /* first 3 */
 
-.shanghai-number img{
-  width:18%;
-  height:auto;
-  margin-top:10%;
-  position: absolute; left: 21%; z-index: 14;
+.shanghaigroup{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 10%;
 }
 
-.year-date{
+.shanghaigroup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shanghaigroup.move-up {
+  transform: translateY(-80px); /* 向上移动10px */
+}
+
+
+.shanghai-number img{
+  width:20%;
+  height:auto;
+  position: absolute;
+  margin-left: 19%;
+ 
+
+}
+
+.year-date1{
   width: 100%;
   height: auto;
-  margin-left: 20%;
-  margin-top: 18%;
+  margin-left: 18%;
+  margin-top: 7%;
+  position: absolute;
+  
+  
 }
-
 
 #year-stick{
   font-family:"Inter", sans-serif;
@@ -333,6 +418,7 @@ body {
   font-style: normal;
   font-size: 5vw;
 }
+
 
 #year-change{
   font-family:"Inter", sans-serif;
@@ -350,15 +436,14 @@ body {
 
 #title-regular2{
   margin-left: 40%;
-  margin-top: -13%;
+
 }
 
 #title-regular2 li{
   display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
   margin-top: 16px;
 }
+
 .inline{
   width: 100%;
 }
@@ -376,21 +461,429 @@ body {
   width: fit-content;
   float:initial;
 }
+
 .shanghai-img{
   width: 30%;
   height: auto;
-  margin-top: -10%;
-  position: absolute; left: 7%; z-index: 14;
+  top: 14%;
+  position: fixed; 
+  left: 5%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.shanghai-img.show {
+  opacity: 1;
+}
+.box-tag{
+  display:flex;
+  margin-top: 10px;
+}
+
+#tag-prismpop{
+  display: inline-block;
+  width: 20%;
+  margin: 1% 1% 1% 0%;
+  text-align: center;
+  padding: 1% 2% 1% 2%;
+  font-family:"Inter-normal", sans-serif;
+  color:#ffffff;
+  font-weight:100;
+  font-style: normal;
+  font-size: 1.4vw;
+  background-color:#2346FD;
+  border-radius: 10px;  
+
+}
+
+/* first 4 */
+
+.shanghaigroup2{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 28%;
+}
+
+.shanghaigroup2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shanghaigroup2.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+
+.year-date2{
+  width: 100%;
+  height: auto;
+  margin-left: 18%;
+  position: absolute;
+  
+}
+
+.dot-img{
+width: 3%;
+height: auto;
+margin-left: 36%;
+}
+
+#title-regular3{
+  margin-left: 40%;
+  margin-top: -3%;
+}
+
+#title-regular3 li{
+  display: flex; 
+  margin-top: 16px;
+}
+
+.cmb-open{
+  margin-top: 3%;
+}
+
+#open-button{
+ position: absolute; z-index: 2;
+ display: inline-block;
+ margin: 5% 5% 5% 8%;
+ text-align: center;
+ padding: 1% 2% 1% 2%;
+ font-family:"Inter-normal", sans-serif;
+ color:#ffffff;
+ font-weight:200;
+ font-style: normal;
+ font-size: 1vw;
+ background-color:#1D1D5D;
+ border-radius: 30px;  
+ border: none;
+ cursor: pointer;
+ text-decoration: none;
+}
+
+#open-button:hover{
+    box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+}
+
+#open-button:active {
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+  transform: translateY(4px);
+}
+.company-img{
+  width: 50%;
+  height: auto;
+}
+
+
+
+
+
+/* first 5 */
+.shanghaigroup3{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 10%;
+}
+
+.shanghaigroup3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shanghaigroup3.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+.year-date3{
+  width: 100%;
+  height: auto;
+  margin-left: 18%; 
+  position: absolute;
+  
+}
+.ymt-open{
+  margin-top: 3%;
+}
+
+
+#title-regular4{
+  margin-left: 40%;
+  margin-top: -3%;
+
+}
+
+#title-regular4 li{
+  display: flex; 
+  margin-top: 16px;
+}
+
+
+
+/* first 6 */
+.shanghaigroup4{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 10%;
+}
+
+.shanghaigroup4.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shanghaigroup4.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+.year-date4{
+  width: 100%;
+  height: auto;
+  margin-left: 18%; 
+  position: absolute;
+  
+}
+.huke-open{
+  margin-top: 3%;
+}
+
+#title-regular5{
+  margin-left: 40%;
+  margin-top: -3%;
+}
+
+#title-regular5 li{
+  display: flex; 
+  margin-top: 16px;
+}
+.box-img img{
+  width: 272px;
+  height: 190px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* first 7 */
+
+.studyexample{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 28%;
+}
+
+.studyexample.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.studyexample.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+
+.bubble {
+  width: 35vw;
+  height: 13vw;
+  border-radius: 20px;
+  background-color: #2346FD;
+  position: relative;
+  margin-left: 26%;
+  margin-top: -15%;
+}
+.bubble:hover{
+    box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+    transform: translateY(-4px);
+}
+
+
+
+.bubble::before {
+  position: absolute; 
+  top: 13vw;
+  left: 17vw;
+  content: '';
+  height: 0.8vw;
+  border-right: 1vw solid transparent;
+  border-bottom: 1vw solid transparent;
+  border-left: 1vw solid transparent;
+  border-top: 1.5vw solid #2346FD;
+}
+.bubble img{
+  width: 20%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.bubble a{
+ display: flex;
+ text-align: left;
+ margin-left: 40%;
+ margin-top: -20%;
+ width: 50%;
+ font-family:"Inter-normal", sans-serif;
+ color:#ffffff;
+ font-weight:200;
+ font-style: normal;
+ font-size: 1.5vw;
+}
+
+.article-group{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+}
+
+.hand-img img{
+  width:25%;
+  height:auto;
+}
+
+.article-img{
+  display: flex;
+  position: absolute; 
+  width: 100%;
+  margin-top: -18%;
+  margin-left: 25%;
+}
+
+
+.studyexample1{
+  width: 30%;
+  height: auto;
+  margin-left: 3%;
+  border-radius: 20px; 
+}
+
+.studyexample1:hover{
+    box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+    transform: translateY(-4px);
+}
+
+.studyexample1:active {
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+  transform: translateY(4px);
+}
+
+.studyexample2{
+  width: 30%;
+  height: auto;
+  margin-left: 3%;
+  border-radius: 20px; 
+}
+
+.studyexample2:hover{
+    box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+    transform: translateY(-4px);
+}
+
+.studyexample2:active {
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+  transform: translateY(4px);
+}
+
+/* first 8 */
+.myself-group{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 20%;
+}
+
+.myself-group.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.myself-group.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+.cloudy-img{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.cloudy-img img{
+ width: 8%;
+ height: auto;
+}
+
+.myself-text{
+  text-align: left;
+  margin-left: 13%;
+  width: 40%;
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:600;
+  font-style: normal;
+  font-size: 1.5vw;
+  position: absolute; z-index: 14;
+  margin-top: -4%;
+  letter-spacing: 0.75px;
+  line-height: 1.5;
+}
+
+.tower-img img{
+  width: 33%;
+  height: auto;
+  margin-left: 58%;
+  margin-top: -5%;
+}
+
+
+/* first 9 */
+
+.lastscreen{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 20%;
+}
+
+.lastscreen.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.lastscreen.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+.lastscreen-img{
+  width: 20%;
+  height: auto;
+  margin-left: 14%;
+  margin-top: -5%;
+}
+
+.last-title{
+  margin-left: 40%;
+  margin-top:-23%;
+  width: 40%;
+  font-family:"Inter", sans-serif;
+  color:#1D1D5D;
+  font-weight:600;
+  font-style: normal;
+  font-size: 2.6vw;
+  position: absolute;
+}
+
+.left-title{
+  margin-left: 40%;
+  margin-top:-12%;
+  width: 40%;
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:600;
+  font-style: normal;
+  font-size: 1.5vw;
+  position: absolute;
+  letter-spacing: 0.75px;
+  line-height: 1.75;
+
 }
 
 
 
 /* whole page */
 .line-long{
-  width:0.7%;
+  width:30%;
   height: auto;
-  position:absolute; left:37%;z-index: -10;
+  position:absolute; left:24.5%; z-index: -14;
 }
+
 
 @font-face{
   font-family: "Inter-Black";
@@ -398,6 +891,8 @@ body {
   font-weight:normal;
   font-style: normal;
 }
+
+
 
 </style>
 </head>
@@ -409,7 +904,7 @@ body {
 <body>
  
  
-    
+ 
 
    <div class="date-tag">
     2024
@@ -438,83 +933,507 @@ body {
       <img src="first-image/first-image1.png" width="1230"; height="658";>
   </div>
 
+ 
 
+ <div class="arrows-float">
+ <img src="first-image/down-button.png" width="100%">
+ </div>
 
 
   <div class="line-title" id="top2">
       <img src="first-image/line_and_title_1.png" width="553px"; height="297px";>
   </div>
 
-
+  <div class="uk-2023-group">
   <div class="uk-2023" >
   <img src="first-image/UK_img.png" width="126px";height="48px";>
   </div>
-
+  <div class="line-long">
+    <img src="first-image/line_long.png" width="100%";>
+    </div>
   <div class="london-img">
     <img src="first-image/london_img.png" width="100%";>
     </div>
 
+  <ul id="title-regular1" class="title-regular1">
+    <li id="subtitle"> MA Degree Design Management </li>
+    <li id="subtitle-text"> University of southampton </li>
+    <li id="subtitle-year"> 2023-2024 </li>
+    <li id="box-text">The course modules of the MA include marketing management, design process management, and leadership. Its simulated marketing entrepreneurship course allows you to comprehensively understand market feedback and formulate strategies from the perspective of an entrepreneur, as well as understand the business and expand the user base. At the same time, its design management covers design methods and process management. </li>
+  </ul>
+ </div>
 
- 
 
- 
- 
   
 
-
-
-    <ul id="title-regular1">
-      <li id="subtitle"> MA Degree Design Management </li>
-      <li id="subtitle-text"> University of southampton </li>
-      <li id="subtitle-year"> 2023-2024 </li>
-      <li id="box-text">The course modules of the MA include marketing management, design process management, and leadership. Its simulated marketing entrepreneurship course allows you to comprehensively understand market feedback and formulate strategies from the perspective of an entrepreneur, as well as understand the business and expand the user base. At the same time, its design management covers design methods and process management. </li>
-    </ul>
 
     
- 
   
-    <div class="shanghai-number">
+  
+    
+  <div class="shanghaigroup">
+  <div class="shanghai-number" id="shanghaiNumber">
       <img src="first-image/Shanghai_number.png" width="260"; height="46";>
   </div>
  
-  <div class="year-date">
+  
+
+  <div class="year-date1" id="shanghaiYear" >
     <a id="year-stick">20</a>
     <a id="year-change">22</a>
   </div>
 
-  <ul id="title-regular2">
-    <span class="inline">
-    <a id="subtitle"> Prismpop </a>
-    <a id="subtitle-remote"> Remote </a>
-    </span>
-    <li id="subtitle-text"> UI&UX designer </li>
-    <li id="subtitle-year"> 2022-2023 </li>
-  </ul>
 
-  <div class="shanghai-img">
+  
+    <ul id="title-regular2">
+      <span class="inline">
+      <a id="subtitle"> Prismpop </a>
+      <a id="subtitle-remote"> Remote </a>
+      </span>
+      <li id="subtitle-text"> UI&UX designer </li>
+      <li id="subtitle-year"> 2022-2023 </li>
+      <a class="box-tag">
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">social media</a>
+      </a>
+    </ul>
+
+  </div>
+
+
+  <div class="shanghai-img" id="shanghaiImg">
     <img src="first-image/shanghaiicon.png" width="100%";>
     </div>
 
-   
 
 
 
+  <div class="shanghaigroup2"> 
+    
+      <div class="year-date2" id="shanghaiYear" >
+        <a id="year-stick">20</a>
+        <a id="year-change">21</a>
+      </div>
 
+      <div class="dot-img">
+        <img src="first-image/dot-img.png" width="100%";>
+        </div>
 
+  <ul id="title-regular3">
+    <span class="inline">
+    <a id="subtitle"> CMB(China Merchants Bank) YunChuang Technology </a>
+    </span>
+    <li id="subtitle-text"> UX designer </li>
+    <li id="subtitle-year"> 2020-2021 </li>
+    <a class="box-tag">
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    </a>
 
-  <div class="line-long">
-    <img src="first-image/line_long.png" width="100%";>
+   <div class="cmb-open">
+      <a id="open-button" href="file:///Users/hebe/Desktop/website/cmb.html"  target="_blank">
+        View Case study
+      </a>
+
+      <div class="company-img">
+        <img src="first-image/cmb-img.png" width="100%">
+      </div>
     </div>
+  </ul>
+  </div>
+ 
+  
   
 
+<div class="shanghaigroup3"> 
+    
+  <div class="year-date3" id="shanghaiYear" >
+    <a id="year-stick">20</a>
+    <a id="year-change">20</a>
+  </div>
 
+
+  <div class="dot-img">
+    <img src="first-image/dot-img.png" width="100%";>
+    </div>
+
+  <ul id="title-regular4">
+    <span class="inline">
+    <a id="subtitle"> Yangmatou </a>
+    </span>
+    <li id="subtitle-text"> UX designer </li>
+    <li id="subtitle-year"> 2020 </li>
+    <a class="box-tag">
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    </a>
+  
+
+  <div class="ymt-open">
+    <a id="open-button" href="file:///Users/hebe/Desktop/website/cmb.html"  target="_blank">
+      View Case study
+    </a>
+
+    <div class="company-img">
+      <img src="first-image/cmb-img.png" width="100%">
+    </div>
+  </div>
+
+ </ul>
+  </div>
+
+
+  <div class="shanghaigroup4"> 
+    
+    <div class="year-date4" id="shanghaiYear" >
+      <a id="year-stick">20</a>
+      <a id="year-change">17</a>
+    </div>
+  
+  
+    <div class="dot-img">
+      <img src="first-image/dot-img.png" width="100%";>
+      </div>
+   
+  <ul id="title-regular5">
+    <span class="inline">
+    <a id="subtitle"> Huke </a>
+    </span>
+    <li id="subtitle-text"> UI&UX designer </li>
+    <li id="subtitle-year"> 2017-2020 </li>
+    <a class="box-tag">
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">social media</a>
+    </a>
+
+
+  <div class="huke-open">
+    <a id="open-button" href="file:///Users/hebe/Desktop/website/cmb.html"  target="_blank">
+      View Case study
+    </a>
+
+    <div class="company-img">
+      <img src="first-image/cmb-img.png" width="100%">
+    </div>
+  </div>
+
+ </ul>
+  </div>
+
+
+<div class="studyexample">
+
+<div class="bubble">
+  <img src="first-image/books-bubble.png" width="100%">
+  <a>
+    I study analysis data and user research, want to understand what users want to think and how to use
+  </a>
+</div>
+
+<div class="aritcle-group">
+  <a class="hand-img">
+    <img src="first-image/hand-img.png" width="100%">
+  </a>
+
+  <div class="article-img">
+
+  <a class="studyexample1" href="file:///Users/hebe/Desktop/website/cmb.html" target="_blank">
+    <img src="first-image/cmb-img.png" width="100%">
+  </a>
+
+  <a class="studyexample2" href="file:///Users/hebe/Desktop/website/cmb.html" target="_blank">
+    <img src="first-image/cmb-img.png" width="100%">
+  </a>
+
+</div>
+
+</div>
+
+
+<div class="myself-group">
+<div class="cloudy-img">
+  <img src="first-image/couldy.png" width="100%">
+</div>
+
+<div class="myself-text">
+<p>I have experience of UX designer for 6 years for different platforms, through 5 projects in my work and  2 projects in my part time
+</p>
+<p>Understanding a complete develop process</p>
+<p>I dream provide great experience to users and to change people’s lifestyle</p>
+<p>But everything need more study and explore </p>
+<p> Is continue...</p>
+</div>
+
+<a class="tower-img">
+  <img src="first-image/tower-img.png" width="100%">
+</a>
+</div>
+
+<div class="lastscreen">
+
+<div class="lastscreen-img">
+  <img src="first-image/myportrait.png" width="100%">
+</div>
+
+<div class="last-title">
+<p>Thanks for watching and welcome contact me </p>
+</div>
+<div class="left-title">
+<p>Email:dubingxin85716261@gmail.com</p>
+<p>Phone:07355238767</p>
+<p>Linkedin:</p>
+</div>
+
+</div>
+
+
+
+
+  <script src="script.js"></script>
+  
   <script>
     function onTopClick(){
       window.location.hash="#top2";
     }
   </script>
  
+ <script>
+
+/*
+// script.js
+window.addEventListener('scroll', function() {
+    const elements = [
+        {
+            element: document.getElementById('shanghaiNumber'),
+            showStart: 1200, // 起始滚动位置
+            showEnd: 3000 // 结束滚动位置
+        },
+        {
+            element: document.getElementById('shanghaiYear'),
+            showStart: 1200, // 起始滚动位置
+            showEnd: 3000 // 结束滚动位置
+        },
+        {
+            element: document.getElementById('shanghaiYear2'),
+            showStart: 1600, // 起始滚动位置
+            showEnd: 3000 // 结束滚动位置
+        },
+
+        {
+            element: document.getElementById('shanghaiYear3'),
+            showStart: 2000, // 起始滚动位置
+            showEnd: 2300 // 结束滚动位置
+        },
+
+        {
+            element: document.getElementById('shanghaiYear4'),
+            showStart: 2300, // 起始滚动位置
+            showEnd: 3000 // 结束滚动位置
+        },
+
+        {
+            element: document.getElementById('shanghaiImg'),
+            showStart:1200, // 起始滚动位置
+            showEnd: 3000 // 结束滚动位置
+        }
+    ];
+
+   
+
+    
+  
+  
+
  
+
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                targetElements.forEach(element => {
+                    element.classList.add('show');
+                });
+            } else {
+                targetElements.forEach(element => {
+                    element.classList.remove('show');
+                });
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    observer.observe(triggerElement);
+});
+*/
+
+
+const elements = [
+    
+    {
+        element: document.getElementById('shanghaiImg'),
+        showStart: 1000,
+        showEnd: 3000
+    }
+];
+
+// 更新元素的显示和隐藏状态
+function updateElements() {
+    const scrollPosition = window.scrollY;
+
+    elements.forEach(({ element, showStart, showEnd }) => {
+        if (scrollPosition >= showStart && scrollPosition <= showEnd) {
+            element.classList.add('fixed'); // 在范围内添加固定类
+            element.classList.add('show'); // 在范围内显示元素
+        } else {
+            element.classList.remove('fixed'); // 超出范围移除固定类
+            element.classList.remove('show'); // 超出范围隐藏元素
+        }
+    });
+}
+
+// 监听滚动事件
+window.addEventListener('scroll', updateElements);
+
+// 监听窗口大小调整事件
+window.addEventListener('resize', updateElements);
+
+// 初始更新元素状态
+updateElements();
+
+
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.line-title');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.uk-2023-group');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.shanghaigroup');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.shanghaigroup2');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.shanghaigroup3');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.shanghaigroup4');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.studyexample');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.myself-group');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.lastscreen');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+
+</script>
+
+
 
 </div>
 </body>
