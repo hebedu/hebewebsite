@@ -104,23 +104,11 @@ p{
   word-wrap: break-word;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
+/* {
+  outline: solid #ff3171;
+  background: #000;
+  color: #ffffff;
+} */
 
 
 
@@ -138,6 +126,7 @@ p{
 body {
   background-color:#00F4B1; 
   margin: 0;
+  width:auto;
 }
 .group-tag{
   display: flex; 
@@ -402,7 +391,7 @@ body {
 }
 
 .year-date1{
-  width: 100%;
+  width:20%;
   height: auto;
   margin-left: 18%;
   margin-top: 7%;
@@ -515,7 +504,7 @@ body {
 
 
 .year-date2{
-  width: 100%;
+  width: 20%;
   height: auto;
   margin-left: 18%;
   position: absolute;
@@ -538,7 +527,7 @@ margin-left: 36%;
   margin-top: 16px;
 }
 
-.cmb-open{
+/* .cmb-open{
   margin-top: 3%;
 }
 
@@ -562,16 +551,107 @@ margin-left: 36%;
 
 #open-button:hover{
     box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+  
 }
 
 #open-button:active {
   box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
   transform: translateY(4px);
+} */
+
+.companyimg1{
+  margin-top: 3%;
 }
-.company-img{
-  width: 50%;
-  height: auto;
+.companyimg1{
+  width: 433px;
+  height: 245px;
+  border-radius: 20px; 
+  position: relative;
 }
+.companyimg1 img{
+  border-radius: 20px;
+
+}
+
+.companyimg1:hover{
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.236);
+  transform: translateY(-4px);
+  background-color: #00000020;
+}
+
+.companyimg1.active{
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.18);
+  transform: translateY(4px);
+}
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 433px;
+  height: 245px;
+  z-index: 30;
+  background: #23d1fd5e;
+  color:#FFFFFF;
+  opacity: 0;
+  border-radius: 20px;
+}
+.mask p{
+  padding: 13% 30% 30% 26%;
+  font-family:"Inter-normal", sans-serif;
+  color:#ffffff;
+  font-weight:600;
+  font-style: normal;
+  font-size: 3vw;
+  letter-spacing: 1.5;
+  width: 100%;
+  text-shadow: 1px 1px 30px #001a6ebe;
+  white-space:nowrap;
+}
+.companyimg1 a:hover .mask{
+  opacity: 1;
+}
+
+
+
+/*
+.companyimg1 img::after {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(transparent, rgba(0, 0, 0, .5));
+opacity: 0;
+}
+
+.companyimg1 img::after {
+opacity: 1;
+}
+.info {
+position: absolute;
+width: 100%;
+height: auto;
+bottom: -50px;
+padding: 25px 30px;
+z-index: 999;
+font-size: 18px;
+color: #fff;
+transition: all .5s;
+}
+
+.box:hover .info {
+transform: translateY(-50px);
+}
+.info h4 {
+font-size: 24px;
+margin: 5px 0;
+}
+.info .more {
+margin-top: 15px;
+}
+
+*/
 
 
 
@@ -593,7 +673,7 @@ margin-left: 36%;
 }
 
 .year-date3{
-  width: 100%;
+  width: 20%;
   height: auto;
   margin-left: 18%; 
   position: absolute;
@@ -617,6 +697,7 @@ margin-left: 36%;
 
 
 
+
 /* first 6 */
 .shanghaigroup4{
   opacity: 0;
@@ -633,7 +714,7 @@ margin-left: 36%;
 }
 
 .year-date4{
-  width: 100%;
+  width: 20%;
   height: auto;
   margin-left: 18%; 
   position: absolute;
@@ -737,18 +818,23 @@ margin-left: 36%;
 .article-img{
   display: flex;
   position: absolute; 
-  width: 100%;
   margin-top: -18%;
   margin-left: 25%;
 }
 
 
+
 .studyexample1{
-  width: 30%;
+  width: 40%;
   height: auto;
   margin-left: 3%;
   border-radius: 20px; 
 }
+.studyexample1 img{
+
+  border-radius: 20px; 
+}
+
 
 .studyexample1:hover{
     box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
@@ -761,9 +847,14 @@ margin-left: 36%;
 }
 
 .studyexample2{
-  width: 30%;
+  width: 40%;
   height: auto;
   margin-left: 3%;
+  border-radius: 20px; 
+}
+
+.studyexample2 img{
+
   border-radius: 20px; 
 }
 
@@ -930,7 +1021,7 @@ margin-left: 36%;
   
 
   <div class="background">
-      <img src="first-image/first-image1.png" width="1230"; height="658";>
+      <img src="first-image/first-image1.png" width="1230px"; height="658px";>
   </div>
 
  
@@ -1040,15 +1131,17 @@ margin-left: 36%;
     <a id="tag-prismpop">social media</a>
     </a>
 
-   <div class="cmb-open">
-      <a id="open-button" href="https://bingxindu.com/cmb.html"  target="_blank">
-        View Case study
-      </a>
+   <div class="companyimg1">
+     
+     <a href="https://bingxindu.com/cmb.html" target="_blank">
+       <img src="first-image/cmb/1.webp" width="100%"> 
+       <div class="mask">
+       <p>view case</p>
+       </div>
+     </a>
+  </div>
 
-      <div class="company-img">
-        <img src="first-image/cmb-img.png" width="100%">
-      </div>
-    </div>
+
   </ul>
   </div>
  
@@ -1084,15 +1177,16 @@ margin-left: 36%;
     </a>
   
 
-  <div class="ymt-open">
-    <a id="open-button" href="https://bingxindu.com/Ymatou.html"  target="_blank">
-      View Case study
-    </a>
 
-    <div class="company-img">
-      <img src="first-image/cmb-img.png" width="100%">
-    </div>
-  </div>
+  <div class="companyimg1">
+     
+    <a href="https://bingxindu.com/Ymatou.html" target="_blank">
+      <img src="first-image/Ymatou/1.webp" width="100%"> 
+      <div class="mask">
+      <p>view case</p>
+      </div>
+    </a>
+ </div>
 
  </ul>
   </div>
@@ -1126,17 +1220,16 @@ margin-left: 36%;
     <a id="tag-prismpop">social media</a>
     </a>
 
-
-  <div class="huke-open">
-    <a id="open-button" href="https://bingxindu.com/huke.html"  target="_blank">
-      View Case study
+  <div class="companyimg1">
+     
+    <a href="https://bingxindu.com/huke.html" target="_blank">
+      <img src="first-image/huke/1.webp" width="100%"> 
+      <div class="mask">
+      <p>view case</p>
+      </div>
     </a>
-
-    <div class="company-img">
-      <img src="first-image/cmb-img.png" width="100%">
-    </div>
-  </div>
-
+ </div>
+  
  </ul>
   </div>
 
@@ -1157,12 +1250,12 @@ margin-left: 36%;
 
   <div class="article-img">
 
-  <a class="studyexample1" href="file:///Users/hebe/Desktop/website/cmb.html" target="_blank">
-    <img src="first-image/cmb-img.png" width="100%">
+  <a class="studyexample1" href="https://bingxindu.com/winds.html" target="_blank">
+    <img src="first-image/Winds/1.webp" width="100%">
   </a>
 
   <a class="studyexample2" href="file:///Users/hebe/Desktop/website/cmb.html" target="_blank">
-    <img src="first-image/cmb-img.png" width="100%">
+    <img src="first-image/data/data.001.webp" width="100%">
   </a>
 
 </div>
