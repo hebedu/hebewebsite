@@ -393,7 +393,7 @@ body {
 .year-date1{
   width:20%;
   height: auto;
-  margin-left: 18%;
+  margin-left: 19%;
   margin-top: 7%;
   position: absolute;
   
@@ -415,11 +415,11 @@ body {
   font-weight: 900;
   font-style: normal;
   font-size: 5vw;
-  width: fit-content;
+  width: 30%;
   background-color:#FFFFFF;
   border-radius: 10px;
   margin-left: 4px;
-  padding: 1% 1% 1% 1%;
+  padding: 2% 3% 2% 3%;
 
 }
 
@@ -454,17 +454,13 @@ body {
 .shanghai-img{
   width: 30%;
   height: auto;
-  top: 14%;
-  position: fixed; 
-  left: 5%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  position: absolute; left: 4%; 
+  margin-top: 10%;
+  
 }
 
 
-.shanghai-img.show {
-  opacity: 1;
-}
+
 .box-tag{
   display:flex;
   margin-top: 10px;
@@ -1379,7 +1375,7 @@ window.addEventListener('scroll', function() {
 */
 
 
-const elements = [
+/* const elements = [
     
     {
         element: document.getElementById('shanghaiImg'),
@@ -1412,7 +1408,7 @@ window.addEventListener('resize', updateElements);
 // 初始更新元素状态
 updateElements();
 
-
+*/
 
 document.addEventListener('scroll', function() {
     var element = document.querySelector('.line-title');
