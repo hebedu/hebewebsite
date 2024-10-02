@@ -127,6 +127,7 @@ body {
   background-color:#00F4B1; 
   margin: 0;
   width:auto;
+  height: fit-content;
 }
 .group-tag{
   display: flex; 
@@ -297,7 +298,7 @@ body {
   width:10%;
   height:auto;
   position: absolute;
-  margin-left: 29%;
+  margin-left: 29.5%;
 }
 
 .london-img{
@@ -321,7 +322,7 @@ body {
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 16px;
+  margin-top: 1.5%;
 }
 
 #subtitle{
@@ -332,10 +333,19 @@ body {
   font-size: 2.2vw;
 }
 
+#subtitle-intro{
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:400;
+  font-style: normal;
+  font-size: 1.4vw;
+  width: 90%;
+}
+
 #subtitle-text{
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
-  font-weight:500;
+  font-weight:700;
   font-style: normal;
   font-size: 1.6vw;
 }
@@ -344,20 +354,29 @@ body {
   color:#1D1D5D;
   font-weight:100;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 #box-text{
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
   font-weight:100;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   width: 70%;
   height: auto;
   line-height: 1.5;
   background-color:#ffffff72;
   border-radius: 20px;
   padding: 16px 28px 16px 28px;
+  
+}
+#box-text p:before{
+  content: "●";
+  margin-right: 5px;
+}
+
+#box-text p{
+  margin: 5px auto;
 }
 
 
@@ -408,7 +427,6 @@ body {
   font-size: 5vw;
 }
 
-
 #year-change{
   font-family:"Inter", sans-serif;
   color:#FF4882;
@@ -430,19 +448,22 @@ body {
 
 #title-regular2 li{
   display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 16px;
 }
+
 
 .inline{
   width: 100%;
 }
 #subtitle-remote{
-  padding: 1% 1% 1% 1%;
+  padding: 0.8% 0.8% 0.8% 0.8%;
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
   font-weight:100;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 1.1vw;
   border-color:#1D1D5D;
   border-radius: 5px;
   border-width: 1px;
@@ -468,7 +489,7 @@ body {
 
 #tag-prismpop{
   display: inline-block;
-  width: 20%;
+  width:fit-content;
   margin: 1% 1% 1% 0%;
   text-align: center;
   padding: 1% 2% 1% 2%;
@@ -476,7 +497,7 @@ body {
   color:#ffffff;
   font-weight:100;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   background-color:#2346FD;
   border-radius: 10px;  
 
@@ -487,7 +508,7 @@ body {
 .shanghaigroup2{
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
-  margin-top: 28%;
+  margin-top: 20%;
 }
 
 .shanghaigroup2.show {
@@ -736,12 +757,71 @@ margin-top: 15px;
   margin-top: 20px;
 }
 
+/* first 6.5 */
+
+.shanghaigroup5{
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease;
+  margin-top: 10%;
+}
+
+.shanghaigroup5.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.shanghaigroup5.move-up {
+  transform: translateY(-200px); /* 向上移动10px */
+}
+
+.year-date5{
+  width: 20%;
+  height: auto;
+  margin-left: 18%; 
+  position: absolute;
+  
+}
+.huke-open{
+  margin-top: 3%;
+}
+
+#title-regular6{
+  margin-left: 40%;
+  margin-top: -3%;
+}
+
+#title-regular6 li{
+  display: flex; 
+  margin-top: 16px;
+}
+.box-img img{
+  width: 272px;
+  height: 190px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#box-text2{
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:100;
+  font-style: normal;
+  font-size: 1.3vw;
+  width: 90%;
+  height: auto;
+  line-height: 1.5;
+  background-color:#ffffff72;
+  border-radius: 20px;
+  padding: 16px 28px 16px 28px;
+  
+}
+
+
 /* first 7 */
 
 .studyexample{
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
-  margin-top: 28%;
+  margin-top: 26%;
 }
 
 .studyexample.show {
@@ -917,7 +997,8 @@ margin-top: 15px;
 .lastscreen{
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
-  margin-top: 20%;
+  margin-top: 18%;
+  height: fit-content;
 }
 
 .lastscreen.show {
@@ -959,7 +1040,19 @@ margin-top: 15px;
   position: absolute;
   letter-spacing: 0.75px;
   line-height: 1.75;
-
+}
+.linkedin{
+  font-family:"Inter-normal", sans-serif;
+  color:#1D1D5D;
+  font-weight:600;
+  font-style: normal;
+  font-size: 1.5vw;
+  letter-spacing: 0.75px;
+  line-height: 1.75;
+}
+.linkedin:hover{
+    color:  #FF6696;
+    transform: translateY(2px);
 }
 
 
@@ -1043,10 +1136,24 @@ margin-top: 15px;
     </div>
 
   <ul id="title-regular1" class="title-regular1">
-    <li id="subtitle"> MA Degree Design Management </li>
-    <li id="subtitle-text"> University of southampton </li>
+    <li id="subtitle"> MA., Design management  </li>
+    <li id="subtitle-text"> University of Southampton, UK </li>
     <li id="subtitle-year"> 2023-2024 </li>
-    <li id="box-text">The course modules of the MA include marketing management, design process management, and leadership. Its simulated marketing entrepreneurship course allows you to comprehensively understand market feedback and formulate strategies from the perspective of an entrepreneur, as well as understand the business and expand the user base. At the same time, its design management covers design methods and process management. </li>
+    <li id="box-text">
+      
+      <p>Design Management: Learning about design methods and process management, with a focus on marketing strategies from an entrepreneurial perspective, identifying target users, and expanding the user base.</p>
+      <p>Design Leadership: Exploring different leadership styles, managing and developing design teams, and fostering a company culture that promotes innovation.</p>  
+      <p>Design Transformation: Investigating the concept and process of transformation through four stages—paradigm, mission, culture, and core processes—using Samsung's design transformation as an example.</p> 
+      <p>Sustainable Development Goals (SDGs): Understanding social responsibility as a designer, applying design skills to promote sustainable growth, and analyzing Apple’s products in relation to the SDGs.</p>
+      <p>Social Isolation of the Elderly in China: Researching how to use system design theory to address social isolation among the elderly in China.</p>
+
+
+
+  
+
+
+    </li>
+    
   </ul>
  </div>
 
@@ -1078,16 +1185,21 @@ margin-top: 15px;
       <a id="subtitle-remote"> Remote </a>
       </span>
       <li id="subtitle-text"> UI&UX designer </li>
+      <li id="subtitle-intro"> "A diverse and sharing e-commerce community for American women." </li>
       <li id="subtitle-year"> 2022-2023 </li>
       <a class="box-tag">
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
-      <a id="tag-prismpop">social media</a>
+      <a id="tag-prismpop">B2C</a>
+    
+      <a id="tag-prismpop">Shopping process</a>
+      
       </a>
+      <li id="box-text">
+      
+        <p>Content Discovery: Redesigned the homepage and hub page to categorize product content, making it easier for users to discover relevant products and increasing search efficiency. This helped expose users to product details earlier.</p>
+        <p>Shopping Process: Enhanced the purchasing flow by adding a feature to save browsing history, allowing users to track products they viewed and complete purchases more smoothly.</p>  
+        <p>New User Retention: Focused on increasing brand awareness through emotional language, simplifying the registration process, and providing clearer guidance to help new users understand product benefits and improve retention.</p>
+
+      </li>
     </ul>
 
   </div>
@@ -1116,15 +1228,16 @@ margin-top: 15px;
     <a id="subtitle"> CMB(China Merchants Bank) YunChuang Technology </a>
     </span>
     <li id="subtitle-text"> UX designer </li>
-    <li id="subtitle-year"> 2020-2021 </li>
+    <li id="subtitle-intro"> "A subsidiary of China Merchants Bank, provides digital solutions to help businesses reduce costs through automated processes" </li>
+    <li id="subtitle-year"> Dec 2020-Aug 2021 </li>
     <a class="box-tag">
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">Digital solutions for businesses</a>
+    <a id="tag-prismpop">Scenario-based cost control </a>
+    <a id="tag-prismpop">B2B </a>
+    <a id="tag-prismpop">WEB/APP</a>
+    <a id="tag-prismpop">Global information framework</a>
+    <a id="tag-prismpop">Optimized business processes</a>
+   
     </a>
 
    <div class="companyimg1">
@@ -1158,18 +1271,18 @@ margin-top: 15px;
 
   <ul id="title-regular4">
     <span class="inline">
-    <a id="subtitle"> Yangmatou </a>
+    <a id="subtitle"> Ymatou App </a>
     </span>
     <li id="subtitle-text"> UX designer </li>
-    <li id="subtitle-year"> 2020 </li>
+    <li id="subtitle-intro"> "A Chinese product for cross-border e-commerce" </li>
+    <li id="subtitle-year"> Apr 2020-Dec 2020 </li>
     <a class="box-tag">
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">Cross-border e-commerce</a>
+    <a id="tag-prismpop">B2C</a>
+    <a id="tag-prismpop">Transaction Flow</a>
+    <a id="tag-prismpop">Purchasing scenarios </a>
+    <a id="tag-prismpop">Data analysis</a>
+   
     </a>
   
 
@@ -1202,18 +1315,19 @@ margin-top: 15px;
    
   <ul id="title-regular5">
     <span class="inline">
-    <a id="subtitle"> Huke </a>
+    <a id="subtitle"> Huke App </a>
     </span>
     <li id="subtitle-text"> UI&UX designer </li>
-    <li id="subtitle-year"> 2017-2020 </li>
+    <li id="subtitle-intro"> "The largest online self-learning education platform for designers in China" </li>
+    <li id="subtitle-year"> Dec 2017-Apr 2020 </li>
     <a class="box-tag">
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
-    <a id="tag-prismpop">social media</a>
+    <a id="tag-prismpop">learning experience</a>
+    <a id="tag-prismpop">B2C</a>
+    <a id="tag-prismpop">User Research & Solutions</a>
+    <a id="tag-prismpop">UI & Experience Upgrade</a>
+    <a id="tag-prismpop">User Behavior Analysis</a>
+    <a id="tag-prismpop">Version Design</a>
+    <a id="tag-prismpop">Cross-team Collaboration</a>
     </a>
 
   <div class="companyimg1">
@@ -1228,6 +1342,35 @@ margin-top: 15px;
   
  </ul>
   </div>
+
+
+  <div class="shanghaigroup5"> 
+    
+    <div class="year-date5" id="shanghaiYear" >
+      <a id="year-stick">20</a>
+      <a id="year-change">16</a>
+    </div>
+
+    <div class="dot-img">
+      <img src="first-image/dot-img.png" width="100%";>
+    </div>
+
+    <ul id="title-regular6">
+    <span class="inline">
+    <a id="subtitle"> Shanghai Extreme Value Information Technology Co., Ltd. </a>
+    </span>
+    <li id="subtitle-text"> UI designer </li>
+    <li id="subtitle-intro"> "An online education platform targeting middle and high school students in China, in collaboration with schools in Shanghai" </li>
+    <li id="subtitle-year"> Jun 2016-Dec 2017 </li>
+    <li id="box-text2">
+      
+      <p>I am mainly responsible for the UI design of student-focused products from the ground up, including a campus information query platform and a homework platform. I collaborate with product managers to communicate requirements and design prototypes.</p>
+      
+
+    </li>
+  
+ </ul>
+</div>
 
 
 <div class="studyexample">
@@ -1265,7 +1408,7 @@ margin-top: 15px;
 </div>
 
 <div class="myself-text">
-<p>I have experience of UX designer for 6 years for different platforms, through 5 projects in my work and  2 projects in my part time
+<p>I have experience of UX designer nearly 6 years for different platforms, through 5 projects in my work and  2 projects in my part time
 </p>
 <p>Understanding a complete develop process</p>
 <p>I dream provide great experience to users and to change people’s lifestyle</p>
@@ -1287,10 +1430,14 @@ margin-top: 15px;
 <div class="last-title">
 <p>Thanks for watching and welcome contact me </p>
 </div>
+
 <div class="left-title">
 <p>Email:dubingxin85716261@gmail.com</p>
 <p>Phone:07355238767</p>
-<p>Linkedin:</p>
+<a href="https://www.linkedin.com/in/bingxin-du-aaa209296/" target="_blank">
+  <p class="linkedin">Linkedin</p>
+</a>
+
 </div>
 
 </div>
@@ -1473,6 +1620,18 @@ document.addEventListener('scroll', function() {
 
 document.addEventListener('scroll', function() {
     var element = document.querySelector('.shanghaigroup4');
+    var elementPosition = element.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
+
+    if (elementPosition < screenPosition) {
+        element.classList.add('show', 'move-up');
+    } else {
+        element.classList.remove('show', 'move-up');
+    }
+});
+
+document.addEventListener('scroll', function() {
+    var element = document.querySelector('.shanghaigroup5');
     var elementPosition = element.getBoundingClientRect().top;
     var screenPosition = window.innerHeight / 1.2; // 调整此值以确定元素何时开始动画
 
