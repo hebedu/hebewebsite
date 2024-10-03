@@ -113,8 +113,6 @@ p{
 
 
 
-
-
 /* first 1 */
 
 
@@ -126,8 +124,8 @@ p{
 body {
   background-color:#00F4B1; 
   margin: 0;
-  width:auto;
-  height: fit-content;
+  width:fit-content;
+  height: 100vh;
 }
 .group-tag{
   display: flex; 
@@ -219,6 +217,14 @@ body {
     line-height: 0.25;
 }
 
+.backgroundgif img{
+  width:100%;
+  height: auto;
+  padding-left: 3%;
+  padding-right: 5%;
+  margin-top: -2%;
+  position: absolute;
+}
 
 .background img{
   width:100%;
@@ -258,7 +264,7 @@ body {
 .line-title{
   opacity: 0;
   transition: transform 1.5s ease, opacity 1s ease;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .line-title.show {
@@ -997,8 +1003,8 @@ margin-top: 15px;
 .lastscreen{
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
-  margin-top: 18%;
-  height: fit-content;
+  margin-top: 17%;
+  padding-bottom: 1%;
 }
 
 .lastscreen.show {
@@ -1012,26 +1018,26 @@ margin-top: 15px;
 .lastscreen-img{
   width: 20%;
   height: auto;
-  margin-left: 14%;
+  margin-left: 10%;
   margin-top: -5%;
 }
 
 .last-title{
   margin-left: 40%;
-  margin-top:-23%;
-  width: 40%;
+  margin-top:-25%;
+  width: 50%;
   font-family:"Inter", sans-serif;
   color:#1D1D5D;
   font-weight:900;
   font-style: normal;
-  font-size: 2.6vw;
+  font-size: 3.2vw;
   position: absolute;
 }
 
 .left-title{
   margin-left: 40%;
   margin-top:-12%;
-  width: 40%;
+  width: 50%;
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
   font-weight:600;
@@ -1041,17 +1047,54 @@ margin-top: 15px;
   letter-spacing: 0.75px;
   line-height: 1.75;
 }
-.linkedin{
+
+.email{
+ display:flex;
+ flex-direction: row;
+}
+
+.email img{
+  margin-top: 4%;
+  margin-right: 2%;
+}
+
+.subtitlelast{
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
-  font-weight:600;
+  font-weight:200;
   font-style: normal;
   font-size: 1.5vw;
-  letter-spacing: 0.75px;
-  line-height: 1.75;
+  margin-left: 1%;
+}
+
+.phone{
+ display:flex;
+ flex-direction: row;
+}
+
+.phone img{
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.linkedin{
+  display:flex;
+  flex-direction: row;
+  text-decoration: none;
+  color:#1D1D5D;
+}
+
+.linkedin img{
+  margin-top: 3%;
+  margin-right: 2%;
+
+}
+
+.hand_icon{
+  margin-left:1%;
 }
 .linkedin:hover{
-    color:  #FF6696;
+    color:  #ffffff;
     transform: translateY(2px);
 }
 
@@ -1083,7 +1126,7 @@ margin-top: 15px;
 </header>
 <body>
  
- 
+
  
 
    <div class="date-tag">
@@ -1091,7 +1134,7 @@ margin-top: 15px;
    </div>
 
    <div class="ux-tag">
-    ux designer
+    UX designer
    </div>
 
   
@@ -1108,7 +1151,9 @@ margin-top: 15px;
     </button>
     </div>
   
-
+    <div class="backgroundgif">
+      <img src="first-image/first-image1.gif" width="1230px"; height="658px";>
+   </div>
   <div class="background">
       <img src="first-image/first-image1.png" width="1230px"; height="658px";>
   </div>
@@ -1432,13 +1477,29 @@ margin-top: 15px;
 </div>
 
 <div class="left-title">
-<p>Email:dubingxin85716261@gmail.com</p>
-<p>Phone:07355238767</p>
-<a href="https://www.linkedin.com/in/bingxin-du-aaa209296/" target="_blank">
-  <p class="linkedin">Linkedin</p>
+<a class="email">
+  <img src="first-image/email-icon.png" width="4.5%" height="3%">
+  <p>Email:</p>
+  <p class="subtitlelast">dubingxin85716261@gmail.com</p>
 </a>
 
+<a class="phone">
+  <img src="first-image/phone_icon.png" width="4.5%" height="3%">
+  <p>Phone:</p>
+  <p class="subtitlelast">7355238767</p>
+</a>
+
+<a class="linkedin" href="https://www.linkedin.com/in/bingxin-du-aaa209296/" target="_blank">
+  <img src="first-image/hand_icon.png" width="4%" height="4%">
+  <p>Linkedin: Bingxin Du</p>
+  
+</a>
+
+
 </div>
+
+
+
 
 </div>
 
