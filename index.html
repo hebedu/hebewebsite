@@ -87,6 +87,15 @@
 
 <html>
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-63BLGPLWS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-63BLGPLWS6');
+</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
@@ -900,7 +909,7 @@ margin-top: 15px;
 .article-img{
   display: flex;
   position: absolute; 
-  margin-top: -18%;
+  margin-top: -16%;
   margin-left: 25%;
 }
 
@@ -954,7 +963,7 @@ margin-top: 15px;
 .myself-group{
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .myself-group.show {
@@ -1086,17 +1095,21 @@ margin-top: 15px;
   flex-direction: row;
   text-decoration: none;
   color:#1D1D5D;
+
+}
+
+.linkedin p{
+  margin-left: 0.5%;
+  
 }
 
 .linkedin img{
-  margin-top: 3%;
+  margin-top: 3.5%;
   margin-right: 2%;
 
 }
 
-.hand_icon{
-  margin-left:1%;
-}
+
 .linkedin:hover{
     color:  #ffffff;
     transform: translateY(2px);
@@ -1433,7 +1446,7 @@ margin-top: 15px;
 
 <div class="aritcle-group">
   <a class="hand-img">
-    <img src="first-image/hand-img.png" width="100%">
+    <img src="first-image/hand-img.gif" width="100%">
   </a>
 
   <div class="article-img">
@@ -1467,6 +1480,7 @@ margin-top: 15px;
 
 <a class="tower-img">
   <img src="first-image/tower-img.png" width="100%">
+  <img src="first-image/cloudy_tower.gif" width="100%">
 </a>
 </div>
 
@@ -1495,7 +1509,7 @@ margin-top: 15px;
 </a>
 
 <a class="linkedin" href="https://www.linkedin.com/in/bingxin-du-aaa209296/" target="_blank">
-  <img src="first-image/hand_icon.png" width="4%" height="4%">
+  <img src="first-image/hand_icon.png" width="4.5%" height="4.5%">
   <p>Linkedin: Bingxin Du</p>
   
 </a>
