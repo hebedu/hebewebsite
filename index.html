@@ -607,27 +607,33 @@ margin-left: 36.5%;
 
 .companyimg1{
   margin-top: 3%;
-  width: 433px;
-  height: 245px;
+  width: 600px;
+  height: 340px;
   border-radius: 20px; 
   position: relative;
+  
 }
 
 .companyimg1 img{
   border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .companyimg1:hover{
   box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.236);
-  transform: translateY(-4px);
+  transform: translateY(10px) scale(1.05);
   background-color: #00000020;
+
 }
 
 .companyimg1.active{
   box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.18);
   transform: translateY(4px);
 }
-.mask{
+/* .mask{
   position: absolute;
   top: 0;
   left: 0;
@@ -640,26 +646,41 @@ margin-left: 36.5%;
   border-radius: 20px;
  
 }
-.mask p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 需要改的地方
+.mask{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #23d1fd5e;
+  color:#FFFFFF;
+  opacity: 0;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
 
+}
+
+.mask p{
+  position: absolute;
   font-family:"Inter-normal", sans-serif;
   color:#ffffff;
   font-weight:600;
   font-style: normal;
-  font-size: 1.8vw;
+  font-size: 2.2vw;
   letter-spacing: 1.5;
-  height: 160px;
   text-shadow: 1px 1px 30px #001a6ebe;
   white-space:nowrap;
+  top:center;
+  left:center;
+ 
+
 }
+
 .companyimg1 a:hover .mask{
   opacity: 1;
 }
 
-
+ */
 
 /*
 .companyimg1 img::after {
@@ -1003,23 +1024,23 @@ margin-top: 15px;
 
 .myself-text{
   text-align: left;
-  margin-left: 15%;
-  width: 36%;
+  margin-left:15%;
+  width: 38%;
   font-family:"Inter-normal", sans-serif;
   color:#1D1D5D;
-  font-weight:600;
+  font-weight:400;
   font-style: normal;
-  font-size: 1.5vw;
-  margin-top: 4%;
-  letter-spacing: 0.75px;
-  line-height: 1.5;
+  font-size: 1.2vw;
+  margin-top: 2%;
+  letter-spacing: 1.3px;
+  line-height: 1.8;
 }
 
 .tower-img img{
   width: 33%;
   height: auto;
   margin-left: 58%;
-  margin-top: -28%;
+  margin-top: -36%;
 }
 
 
@@ -1234,11 +1255,10 @@ margin-top: 15px;
     <li id="subtitle-year"> 2023-2024 </li>
     <li id="box-text">
       
-      <p>Design Management: Learning about design strategy and process management, with a focus on marketing strategies from an entrepreneurial perspective, identifying target users, and expanding the user base.</p>
-      <p>Design Leadership: Exploring different leadership styles, managing and developing design teams, and fostering a company culture that promotes innovation.</p>  
-      <p>Design Transformation: Investigating the concept and process of transformation through four stages—paradigm, mission, culture, and core processes—using Samsung's design transformation as an example.</p> 
-      <p>Sustainable Development Goals (SDGs): Understanding social responsibility as a designer, applying design skills to promote sustainable growth, and analyzing Apple’s products in relation to the SDGs.</p>
-      <p>Social Isolation of the Elderly in China: Researching how to use system design theory to address social isolation among the elderly in China.</p>
+      <p>Learning to understand customer needs and market dynamics, while approaching design strategy from an entrepreneurial perspective, based on the target user group and market trends.</p>
+      <p>Exploring various leadership styles, developing and managing design teams, and nurturing a company culture that fosters innovation.</p>  
+      <p>Studying design thinking through the lens of Samsung’s design transformation, analyzing its stages and how these shifts have positively impacted the company.</p> 
+      <p>Understanding the social and environmental responsibilities of designers, including aligning with the Sustainable Development Goals (SDGs), and evaluating what defines successful design.</p>
 
 
 
@@ -1288,9 +1308,9 @@ margin-top: 15px;
       </a>
       <li id="box-text">
       
-        <p>Content Discovery: Redesigned the homepage and hub page to categorize product content, making it easier for users to discover relevant products and increasing search efficiency. This helped expose users to product details earlier.</p>
-        <p>Shopping Process: Enhanced the purchasing flow by adding a feature to save browsing history, allowing users to track products they viewed and complete purchases more smoothly.</p>  
-        <p>New User Retention: Focused on increasing brand awareness through emotional language, simplifying the registration process, and providing clearer guidance to help new users understand product benefits and improve retention.</p>
+        <p>Redesigned homepage and hubpage for better product discovery and faster search and to meet different user needs.</p>
+        <p>Improved purchasing flow smoother and more complet by adding browsing history to track viewed products.</p>  
+        <p>Boosted new user retention with emotional branding, a simplified registration process, and clearer product guidance.</p>
 
       </li>
     </ul>
@@ -1324,22 +1344,24 @@ margin-top: 15px;
     <li id="subtitle-intro"> "A subsidiary of China Merchants Bank, provides digital solutions to help businesses reduce costs through automated processes" </li>
     <li id="subtitle-year"> Dec 2020-Aug 2021 </li>
     <a class="box-tag">
-    <a id="tag-prismpop">Digital solutions for businesses</a>
-    <a id="tag-prismpop">Scenario-based cost control </a>
-    <a id="tag-prismpop">B2B </a>
+    <a id="tag-prismpop">Business Travel Platform Optimization</a>
+    <a id="tag-prismpop">Scenario-based cost control</a>
+    <a id="tag-prismpop">Web/App Information Architecture Redesign </a>
+    <a id="tag-prismpop">B2B Product</a>
     <a id="tag-prismpop">WEB/APP</a>
-    <a id="tag-prismpop">Global information framework</a>
-    <a id="tag-prismpop">Optimized business processes</a>
+    <a id="tag-prismpop">Form Components</a>
+    <a id="tag-prismpop">Workflow Improvement</a>
    
     </a>
 
    <div class="companyimg1">
      
      <a href="https://bingxindu.com/cmb.html" target="_blank">
-       <img src="first-image/cmb/1.webp" width="100%"> 
-       <div class="mask">
+       <img src="first-image/cmb/1.webp" alt="Image"> 
+       <!--<div class="mask">
        <p>view case</p>
-       </div>
+       </div> */
+       -->
      </a>
   </div>
 
@@ -1384,9 +1406,9 @@ margin-top: 15px;
      
     <a href="https://bingxindu.com/Ymatou.html" target="_blank">
       <img src="first-image/Ymatou/1.webp" width="100%"> 
-      <div class="mask">
+      <!--<div class="mask">
       <p>view case</p>
-      </div>
+      </div> -->
     </a>
  </div>
 
@@ -1427,9 +1449,9 @@ margin-top: 15px;
      
     <a href="https://bingxindu.com/huke.html" target="_blank">
       <img src="first-image/huke/1.gif" width="100%"> 
-      <div class="mask">
+      <!--<div class="mask">
       <p>view case</p>
-      </div>
+      </div> -->
     </a>
  </div>
   
@@ -1501,12 +1523,12 @@ margin-top: 15px;
 </div>
 
 <div class="myself-text">
-<p>I have experience of UX designer nearly 6 years for different platforms, through 5 projects in my work and  2 projects in my part time
+<p> - I have experience of UX designer nearly 6 years for different platforms, through 5 projects in my work and  2 projects in my part time
 </p>
-<p>Understanding a complete develop process</p>
-<p>I dream provide great experience to users</p>
-<p>But everything need more study and explore </p>
-<p> Is continue...</p>
+<p> - I’ve led the entire design process, from demand planning to post-launch analysis, driven by a passion for enhancing user experiences, solving problems, and creating elegant, impactful interactions. </p>
+<p> - My expertise includes user interviews, persona development, analyze user's path, customer journeys, service blueprints, information architecture, task flows, usability testing, and high-and low-fidelity prototyping. </p>
+<p> - I'm proficient in data analysis (intermediate level) and skilled in design tools like Sketch, Figma, Adobe Photoshop, Illustrator, Axure, and OmniGraffle, with basic knowledge of HTML/CSS.</p>
+
 </div>
 
 <a class="tower-img">
