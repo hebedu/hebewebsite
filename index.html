@@ -189,10 +189,19 @@ body {
   position: absolute; left:64%; z-index:11;
 }
 
+.both-button{
+  display: flex;
+  margin-left:6%;
+  margin-top: -5%;
+
+
+}
+
 .start-button{
+    display: inline-block;
     background-color: #FF3171;
     font-family:"Inter", sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
     "slnt" 0;
@@ -200,10 +209,11 @@ body {
     border-radius: 100px;
     cursor: pointer;
     width:auto;
-    padding: 3% 9% 3% 9%;
+    padding: 2% 9% 2% 9%;
     font-size: 3vw;
-    margin-left: 5%;
-    margin-top: -6%;
+    text-align: center;
+    
+    
 }
 
 .start-button:hover{
@@ -211,6 +221,42 @@ body {
 }
 
 .start-button:active {
+  background-color: #ff3171;
+  box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+  transform: translateY(4px);
+}
+
+ #top1{
+  color: white;
+  font-size: 3vw;
+  text-decoration: none;
+
+}
+
+.all-button{
+    display: inline-block;
+    background-color: #1D1D5D;
+    font-family:"Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: auto;
+    padding: 3% 5% 3% 5%;
+    font-size: 3vw;
+    margin-left: 4%;
+    text-align: center;
+   
+}
+
+.all-button:hover{
+    box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
+}
+
+.all-button:active {
   background-color: #ff3171;
   box-shadow: 6px 6px 20px rgba(0, 20, 120, 0.3);
   transform: translateY(4px);
@@ -252,13 +298,12 @@ body {
   height: auto;
   padding-left: 3%;
   padding-right: 5%;
-
 }
 
 .arrows-float{
   width: 2%;
   height: auto;
-  margin-left: 25%;
+  margin-left: 16%;
   margin-top: -8%;
   position: absolute; z-index: 12;
 
@@ -1219,11 +1264,20 @@ margin-top: 15px;
       <p>Hello</p>
       <p>I'm Bingxin</p>
     </ul>
-    <button class="start-button" >
+
+    <div class="both-button">
+     <button class="start-button" >
       <a href="#top2" id="top1">
-      Start the journey
+      Start
       </a>
-    </button>
+     </button>
+     <button class="all-button" >
+      <a href="https://bingxindu.com/all.html" target="_blank" id="top1">
+      View Portfolio
+      </a>
+     </button>
+    </div>
+
     </div>
 
     
